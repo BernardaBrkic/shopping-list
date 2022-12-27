@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
+
+.shopping-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.shopping-form h1 {
+  color: #263238;
+  font-family: "DynaPuff", cursive;
+  margin-top: 2rem;
+}
+.input-item {
+  display: flex;
+  flex-direction: column;
+}
+.input-item input {
+  all: unset;
+  padding: 0.5rem;
+  border-bottom: 2px solid #263238;
+  background-color: #26323817;
+  color: #263238;
+}
+.input-item input:focus {
+  padding: 0.8rem;
+  transition: 0.2s;
+}
+.input-item.invalid input {
+  border-bottom: 2px solid #ff0000;
+  background-color: #ff000046;
+}
+.input-item.invalid label {
+  color: #ff0000;
+}
+.input-item label {
+  padding-bottom: 1.2rem;
+}
+@media (max-width: 768px) {
+  .shopping-form {
+    width: 100%;
+  }
+}

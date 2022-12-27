@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
+
+body {
+  font-family: "Fredoka", sans-serif;
+}
+.hero {
+  height: 52vh;
+  background-image: url("./assets/background.png");
+  background-size: 85vh;
+  background-repeat: no-repeat;
+  background-position: center -130px;
+  background-attachment: fixed;
+  background-color: #b9b9b9;
+}
+.wrapper {
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 3rem 0;
+}
+.shopping-list-items {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .wrapper {
+    max-width: 90%;
+  }
+  .shopping-list-items {
+    width: 100%;
+    padding: 0;
+  }
+}
